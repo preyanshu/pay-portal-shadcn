@@ -1,9 +1,9 @@
-import { DashboardLayout } from "@/components/dashboard-layout"
-import { DashboardStats } from "@/components/dashboard-stats"
-import { RecentEmployees } from "@/components/recent-employees"
-import { RecentPayouts } from "@/components/recent-payouts"
+import { DashboardLayout } from "@/components/hr/dashboard-layout"
+import { DashboardStats } from "@/components/hr/dashboard-stats"
+import { RecentEmployees } from "@/components/hr/recent-employees"
+import { RecentPayouts } from "@/components/hr/recent-payouts"
 
-export default function Dashboard() {
+export default function HRDashboard() {
   return (
     <DashboardLayout>
       <div className="space-y-8">

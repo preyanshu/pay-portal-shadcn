@@ -83,7 +83,7 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
             <div className="flex items-center space-x-4">
               {/* USDC Balance */}
               <div className="flex items-center space-x-2 text-sm">
-                <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                <div className="w-2 h-2 bg-primary rounded-full"></div>
                 <span className="text-muted-foreground">USDC</span>
                 <span className="font-medium">5.00</span>
               </div>
@@ -91,8 +91,8 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
               {/* Wallet Address */}
               <div className="flex items-center space-x-2 bg-muted px-3 py-1.5 rounded-lg">
                 <span className="text-sm font-mono">0.019 AVAX</span>
-                <div className="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center">
-                  <span className="text-xs text-white font-medium">0x</span>
+                <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center">
+                  <span className="text-xs text-primary-foreground font-medium">0x</span>
                 </div>
                 <span className="text-sm text-muted-foreground">0x91...B306</span>
               </div>

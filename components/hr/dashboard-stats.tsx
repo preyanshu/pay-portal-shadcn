@@ -7,28 +7,28 @@ const stats = [
     value: "1",
     description: "Active employee count",
     icon: Users,
-    color: "text-green-500",
+    color: "text-primary",
   },
   {
     name: "Treasury Balance",
     value: "$2,001",
     description: "Available for payouts",
     icon: Vault,
-    color: "text-green-500",
+    color: "text-primary",
   },
   {
     name: "Total Payouts",
     value: "$8",
     description: "All-time payout amount",
     icon: DollarSign,
-    color: "text-green-500",
+    color: "text-primary",
   },
   {
     name: "Average Salary",
     value: "$1",
     description: "Annual average",
     icon: TrendingUp,
-    color: "text-green-500",
+    color: "text-primary",
   },
 ]
 

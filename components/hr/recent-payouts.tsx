@@ -31,8 +31,8 @@ export function RecentPayouts() {
         {payouts.map((payout) => (
           <div key={payout.id} className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
-              <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-                <span className="text-white text-sm font-medium">$</span>
+              <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                <span className="text-primary-foreground text-sm font-medium">$</span>
               </div>
               <div>
                 <p className="font-medium text-card-foreground">{payout.amount}</p>

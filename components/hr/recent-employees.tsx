@@ -23,7 +23,7 @@ export function RecentEmployees() {
           <div key={employee.id} className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
               <Avatar className="w-10 h-10">
-                <AvatarFallback className={`${employee.avatarColor} text-white font-medium`}>
+                <AvatarFallback className={`bg-primary text-primary-foreground font-medium`}>
                   {employee.avatar}
                 </AvatarFallback>
               </Avatar>
