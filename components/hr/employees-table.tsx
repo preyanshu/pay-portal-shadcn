@@ -249,7 +249,7 @@ export  function EmployeesTable() {
       {/* Action Bar */}
       {selectedCount > 0 && (
         <div className="fixed bottom-6 left-1/2 -translate-x-1/2">
-          <Card className="bg-card border-border/50 shadow-lg rounded-4xl">
+          <Card className="bg-card border-border/50 shadow-xl rounded-4xl">
             <CardContent className="px-6 py-4">
               <div className="flex items-center gap-4">
                 <div className="text-sm">

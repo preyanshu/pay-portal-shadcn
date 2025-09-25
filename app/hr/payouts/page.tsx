@@ -1,10 +1,10 @@
 import { DashboardLayout } from "@/components/hr/dashboard-layout"
-import { ESOPManagement } from "@/components/hr/esop-management"
+import {PayoutsPage} from "@/components/hr/payouts-table"
 
 export default function HREsopsPage() {
   return (
     <DashboardLayout>
-      <ESOPManagement />
+      <PayoutsPage />
       <></>
     </DashboardLayout>
   )

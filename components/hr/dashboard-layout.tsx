@@ -10,7 +10,7 @@ const navigation = [
   { name: "Dashboard", href: "/", icon: LayoutDashboard, current: true },
   { name: "Employees", href: "/hr/employees", icon: Users, current: false },
   { name: "ESOPs", href: "/hr/esops", icon: TrendingUp, current: false },
-  { name: "Payouts", href: "#", icon: DollarSign, current: false },
+  { name: "Payouts", href: "/hr/payouts", icon: DollarSign, current: false },
   { name: "Treasury", href: "#", icon: Vault, current: false },
   { name: "Settings", href: "#", icon: Settings, current: false },
 ]
@@ -71,7 +71,7 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
       {/* Main content */}
       <div className="ml-64">
         {/* Header */}
-        <header className="bg-background border-b border-border px-6 py-4">
+        <header className="bg-background border-b border-border px-6 py-[1.24rem]">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
               {/* Theme toggle */}
