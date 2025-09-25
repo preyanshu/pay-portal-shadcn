@@ -7,9 +7,9 @@ import { Button } from "@/components/ui/button"
 import { LayoutDashboard, Users, TrendingUp, DollarSign, Vault, Settings, Moon, Sun } from "lucide-react"
 
 const navigation = [
-  { name: "Dashboard", href: "#", icon: LayoutDashboard, current: true },
-  { name: "Employees", href: "#", icon: Users, current: false },
-  { name: "ESOPs", href: "#", icon: TrendingUp, current: false },
+  { name: "Dashboard", href: "/", icon: LayoutDashboard, current: true },
+  { name: "Employees", href: "/hr/employees", icon: Users, current: false },
+  { name: "ESOPs", href: "/hr/esops", icon: TrendingUp, current: false },
   { name: "Payouts", href: "#", icon: DollarSign, current: false },
   { name: "Treasury", href: "#", icon: Vault, current: false },
   { name: "Settings", href: "#", icon: Settings, current: false },
