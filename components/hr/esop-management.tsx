@@ -106,6 +106,7 @@ export function ESOPManagement() {
                     <Badge variant="secondary" className="bg-primary-1/20 text-primary border-primary-1/20 text-xs">
                       Active
                     </Badge>
+                    
                   </div>
                 </div>
 

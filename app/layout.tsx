@@ -33,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" className="">
       <body className={`font-sans ${plusJakartaSans.variable} ${lora.variable} ${ibmPlexMono.variable}`}>
         <Suspense fallback={null}>{children}</Suspense>
         <Analytics />

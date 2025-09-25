@@ -3,16 +3,17 @@
 import type React from "react"
 
 import { useState } from "react"
+import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { LayoutDashboard, Users, TrendingUp, DollarSign, Vault, Settings, Moon, Sun } from "lucide-react"
 
 const navigation = [
-  { name: "Dashboard", href: "/", icon: LayoutDashboard, current: true },
-  { name: "Employees", href: "/hr/employees", icon: Users, current: false },
-  { name: "ESOPs", href: "/hr/esops", icon: TrendingUp, current: false },
-  { name: "Payouts", href: "/hr/payouts", icon: DollarSign, current: false },
-  { name: "Treasury", href: "#", icon: Vault, current: false },
-  { name: "Settings", href: "#", icon: Settings, current: false },
+  { name: "Dashboard", href: "/", icon: LayoutDashboard },
+  { name: "Employees", href: "/hr/employees", icon: Users },
+  { name: "ESOPs", href: "/hr/esops", icon: TrendingUp },
+  { name: "Payouts", href: "/hr/payouts", icon: DollarSign },
+  { name: "Treasury", href: "/hr/treasury", icon: Vault },
+  { name: "Settings", href: "/hr/settings", icon: Settings },
 ]
 
 interface DashboardLayoutProps {
@@ -21,6 +22,7 @@ interface DashboardLayoutProps {
 
 export function DashboardLayout({ children }: DashboardLayoutProps) {
   const [isDark, setIsDark] = useState(true)
+  const pathname = usePathname()
 
   const toggleTheme = () => {
     setIsDark(!isDark)
@@ -49,12 +51,13 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
           <nav className="flex-1 px-4 py-6 space-y-2">
             {navigation.map((item) => {
               const Icon = item.icon
+              const isCurrent = pathname === item.href
               return (
                 <a
                   key={item.name}
                   href={item.href}
                   className={`flex items-center px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
-                    item.current
+                    isCurrent
                       ? "bg-sidebar-accent text-sidebar-accent-foreground"
                       : "text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground"
                   }`}
